@@ -1,0 +1,131 @@
+{
+  "form_title": "IRS Form W-2 (Page 2)",
+  "fields": [
+    {
+      "id": "employee_ssn",
+      "label": "Employee's Social Security Number",
+      "type": "text",
+      "placeholder": "XXX-XX-XXXX",
+      "position": { "x": 50, "y": 700, "width": 250, "height": 20 }
+    },
+    {
+      "id": "employer_ein",
+      "label": "Employer Identification Number (EIN)",
+      "type": "text",
+      "placeholder": "XX-XXXXXXX",
+      "position": { "x": 320, "y": 700, "width": 250, "height": 20 }
+    },
+    {
+      "id": "employer_name_address",
+      "label": "Employer's Name, Address, and ZIP Code",
+      "type": "text",
+      "placeholder": "Enter employer details",
+      "position": { "x": 50, "y": 660, "width": 520, "height": 20 }
+    },
+    {
+      "id": "control_number",
+      "label": "Control Number",
+      "type": "text",
+      "placeholder": "Enter control number",
+      "position": { "x": 50, "y": 600, "width": 250, "height": 20 }
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee's Name",
+      "type": "text",
+      "placeholder": "Enter first and last name",
+      "position": { "x": 320, "y": 600, "width": 250, "height": 20 }
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee's Address and ZIP Code",
+      "type": "text",
+      "placeholder": "Enter address details",
+      "position": { "x": 50, "y": 560, "width": 520, "height": 20 }
+    },
+    {
+      "id": "wages_tips",
+      "label": "Wages, Tips, Other Compensation",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 50, "y": 510, "width": 250, "height": 20 }
+    },
+    {
+      "id": "federal_income_tax",
+      "label": "Federal Income Tax Withheld",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 320, "y": 510, "width": 250, "height": 20 }
+    },
+    {
+      "id": "social_security_wages",
+      "label": "Social Security Wages",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 50, "y": 470, "width": 250, "height": 20 }
+    },
+    {
+      "id": "social_security_tax",
+      "label": "Social Security Tax Withheld",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 320, "y": 470, "width": 250, "height": 20 }
+    },
+    {
+      "id": "medicare_wages",
+      "label": "Medicare Wages and Tips",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 50, "y": 430, "width": 250, "height": 20 }
+    },
+    {
+      "id": "medicare_tax",
+      "label": "Medicare Tax Withheld",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 320, "y": 430, "width": 250, "height": 20 }
+    },
+    {
+      "id": "state_id_number",
+      "label": "State Employer’s State ID Number",
+      "type": "text",
+      "placeholder": "Enter state ID number",
+      "position": { "x": 50, "y": 390, "width": 250, "height": 20 }
+    },
+    {
+      "id": "state_wages",
+      "label": "State Wages, Tips, etc.",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 320, "y": 390, "width": 250, "height": 20 }
+    },
+    {
+      "id": "state_income_tax",
+      "label": "State Income Tax",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 50, "y": 350, "width": 250, "height": 20 }
+    },
+    {
+      "id": "local_wages",
+      "label": "Local Wages, Tips, etc.",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 320, "y": 350, "width": 250, "height": 20 }
+    },
+    {
+      "id": "local_income_tax",
+      "label": "Local Income Tax",
+      "type": "number",
+      "placeholder": "Enter amount",
+      "position": { "x": 50, "y": 310, "width": 250, "height": 20 }
+    },
+    {
+      "id": "locality_name",
+      "label": "Locality Name",
+      "type": "text",
+      "placeholder": "Enter locality name",
+      "position": { "x": 320, "y": 310, "width": 250, "height": 20 }
+    }
+  ]
+}
