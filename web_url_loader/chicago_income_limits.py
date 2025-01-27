@@ -33,7 +33,7 @@ def format_docs(docs):
 import os
 
 # Set the OpenAI API key
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "<api key>"
 
 url = "https://www.chicago.gov/city/en/depts/doh/provdrs/renters/svcs/ami_chart.html"
 loader = RecursiveUrlLoader(
