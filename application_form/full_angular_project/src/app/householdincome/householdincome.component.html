@@ -1,0 +1,36 @@
+
+<div class="household-income">
+  <h2>Household Income Form</h2>
+  <form [formGroup]="householdIncomeForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="incomeSource">Income Source</label>
+      <input id="incomeSource" formControlName="incomeSource" class="form-control" />
+      <div *ngIf="incomeSource.invalid && (incomeSource.dirty || incomeSource.touched)" class="alert alert-danger">
+        <div *ngIf="incomeSource.errors?.required">Income Source is required.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input id="amount" type="number" formControlName="amount" class="form-control" />
+      <div *ngIf="amount.invalid && (amount.dirty || amount.touched)" class="alert alert-danger">
+        <div *ngIf="amount.errors?.required">Amount is required.</div>
+        <div *ngIf="amount.errors?.min">Amount must be a positive number.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="frequency">Frequency</label>
+      <select id="frequency" formControlName="frequency" class="form-control">
+        <option value="">Select Frequency</option>
+        <option value="monthly">Monthly</option>
+        <option value="yearly">Yearly</option>
+      </select>
+      <div *ngIf="frequency.invalid && (frequency.dirty || frequency.touched)" class="alert alert-danger">
+        <div *ngIf="frequency.errors?.required">Frequency is required.</div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="householdIncomeForm.invalid">Submit</button>
+  </form>
+</div>

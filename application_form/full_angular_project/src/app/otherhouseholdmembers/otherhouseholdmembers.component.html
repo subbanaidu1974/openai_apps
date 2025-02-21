@@ -1,0 +1,31 @@
+<div class="other-household-members">
+  <h2>Other Household Members</h2>
+  
+  <form [formGroup]="otherHouseholdMembersForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="members">
+      <div *ngFor="let member of members.controls; let i = index" [formGroupName]="i" class="member-form-group">
+        <h3>Member {{ i + 1 }}</h3>
+        
+        <label for="name-{{ i }}">Name:</label>
+        <input id="name-{{ i }}" formControlName="name" placeholder="Enter name" />
+
+        <label for="age-{{ i }}">Age:</label>
+        <input id="age-{{ i }}" type="number" formControlName="age" placeholder="Enter age" />
+
+        <label for="relationship-{{ i }}">Relationship:</label>
+        <input id="relationship-{{ i }}" formControlName="relationship" placeholder="Enter relationship" />
+
+        <button type="button" (click)="removeMember(i)">Remove Member</button>
+      </div>
+    </div>
+
+    <button type="button" (click)="addMember()">Add Member</button>
+    <button type="submit" [disabled]="otherHouseholdMembersForm.invalid">Submit</button>
+  </form>
+
+  <div *ngIf="submitted">
+    <h3>Submitted Data:</h3>
+    <pre>{{ otherHouseholdMembersForm.value | json}}</pre>
+  </div>
+</div>
+

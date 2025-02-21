@@ -1,0 +1,66 @@
+<!-- home.component.html -->
+<div class="home-container">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/home" routerLinkActive="active" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a routerLink="/applicant" routerLinkActive="active">Applicant</a>
+      </li>
+      <li>
+        <a routerLink="/services" routerLinkActive="active">Services</a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>Welcome to Our Home Page!</h1>
+    <p>This is the home page of our Angular application. Use the navigation links above to explore.</p>
+  </div>
+</div>
+
+<!-- Styles for better presentation -->
+<style>
+  .home-container {
+    padding: 20px;
+  }
+
+  .navbar {
+    background-color: #007bff;
+    padding: 10px;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-links li {
+    display: inline;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+
+  .nav-links a:hover {
+    background-color: #0056b3;
+  }
+
+  .nav-links .active {
+    background-color: #0056b3;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+</style>
+

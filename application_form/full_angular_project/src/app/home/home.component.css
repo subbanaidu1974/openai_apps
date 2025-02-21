@@ -1,0 +1,64 @@
+
+/* Home Component Styles */
+.vcontainer {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* Container for the home page */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the home page */
+    min-height: 100vh; /* Full height for the home page */
+}
+
+/* Header styles */
+.home-header {
+    font-size: 2.5rem; /* Large font size for the header */
+    color: #333; /* Dark color for text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Description text styles */
+.home-description {
+    font-size: 1.2rem; /* Medium font size for description */
+    color: #666; /* Lighter color for secondary text */
+    text-align: center; /* Center align the text */
+    margin-bottom: 40px; /* Space below the description */
+}
+
+/* Button styles */
+.home-button {
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size for button text */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.home-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .home-header {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    .home-description {
+        font-size: 1rem; /* Smaller font size on mobile */
+    }
+
+    .home-button {
+        width: 100%; /* Full width button on mobile */
+    }
+}

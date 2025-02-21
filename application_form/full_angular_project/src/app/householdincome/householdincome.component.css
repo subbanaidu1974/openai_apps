@@ -1,0 +1,78 @@
+/* Household Income Component Styles */
+
+/* Container for the entire component */
+.household-income-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styles */
+.household-income-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form Styles */
+.household-income-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Field Styles */
+.household-income-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button Styles */
+.household-income-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.household-income-button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message Styles */
+.household-income-error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .household-income-container {
+        padding: 15px;
+    }
+
+    .household-income-title {
+        font-size: 20px;
+    }
+
+    .household-income-input {
+        font-size: 14px;
+    }
+
+    .household-income-button {
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,69 @@
+
+<div class="employment-container">
+  <h2>Employment Information</h2>
+  <form [formGroup]="employmentForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="jobTitle">Job Title</label>
+      <input
+        id="jobTitle"
+        type="text"
+        formControlName="jobTitle"
+        class="form-control"
+        placeholder="Enter your job title"
+      />
+      <div *ngIf="employmentForm.get('jobTitle').invalid && (employmentForm.get('jobTitle').touched || employmentForm.get('jobTitle').dirty)" class="error">
+        <small *ngIf="employmentForm.get('jobTitle').errors.required">Job Title is required.</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="companyName">Company Name</label>
+      <input
+        id="companyName"
+        type="text"
+        formControlName="companyName"
+        class="form-control"
+        placeholder="Enter your company name"
+      />
+      <div *ngIf="employmentForm.get('companyName').invalid && (employmentForm.get('companyName').touched || employmentForm.get('companyName').dirty)" class="error">
+        <small *ngIf="employmentForm.get('companyName').errors.required">Company Name is required.</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Start Date</label>
+      <input
+        id="startDate"
+        type="date"
+        formControlName="startDate"
+        class="form-control"
+      />
+      <div *ngIf="employmentForm.get('startDate').invalid && (employmentForm.get('startDate').touched || employmentForm.get('startDate').dirty)" class="error">
+        <small *ngIf="employmentForm.get('startDate').errors.required">Start Date is required.</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="endDate">End Date</label>
+      <input
+        id="endDate"
+        type="date"
+        formControlName="endDate"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="jobDescription">Job Description</label>
+      <textarea
+        id="jobDescription"
+        formControlName="jobDescription"
+        class="form-control"
+        rows="4"
+        placeholder="Enter job description"
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="employmentForm.invalid">Submit</button>
+  </form>
+</div>

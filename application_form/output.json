@@ -1,0 +1,190 @@
+{
+  "Applicant": {
+    "label": "Applicant",
+    "name": "applicant",
+    "type": "object",
+    "validations": {
+      "lastName": {
+        "required": true,
+        "type": "string"
+      },
+      "firstName": {
+        "required": true,
+        "type": "string"
+      },
+      "middleInitial": {
+        "required": false,
+        "type": "string"
+      },
+      "dateOfBirth": {
+        "required": true,
+        "type": "date"
+      },
+      "maritalStatus": {
+        "required": true,
+        "type": "string",
+        "options": ["Single", "Married", "Divorced"]
+      },
+      "socialSecurityNumber": {
+        "required": true,
+        "type": "string",
+        "pattern": "^[0-9]{3}-[0-9]{2}-[0-9]{4}$"
+      },
+      "subsidizedHousing": {
+        "required": true,
+        "type": "boolean"
+      },
+      "race": {
+        "required": true,
+        "type": "string",
+        "options": [
+          "Alaskan Native or American Indian",
+          "Asian",
+          "Black or African American",
+          "Native Hawaiian or Pacific Islander",
+          "White",
+          "Multi-Race"
+        ]
+      },
+      "grossEarnings": {
+        "required": true,
+        "type": "number",
+        "min": 0
+      }
+    }
+  },
+  "SpouseCoApplicant": {
+    "label": "Spouse/Co-Applicant",
+    "name": "spouseCoApplicant",
+    "type": "object",
+    "validations": {
+      "lastName": {
+        "required": true,
+        "type": "string"
+      },
+      "firstName": {
+        "required": true,
+        "type": "string"
+      },
+      "middleInitial": {
+        "required": false,
+        "type": "string"
+      },
+      "dateOfBirth": {
+        "required": true,
+        "type": "date"
+      },
+      "maritalStatus": {
+        "required": true,
+        "type": "string",
+        "options": ["Single", "Married", "Divorced"]
+      }
+    }
+  },
+  "RaceEthnicity": {
+    "label": "Race/Ethnicity",
+    "name": "raceEthnicity",
+    "type": "object",
+    "validations": {
+      "ethnicity": {
+        "required": true,
+        "type": "string",
+        "options": ["Hispanic", "Non-Hispanic"]
+      }
+    }
+  },
+  "OtherHouseholdMembers": {
+    "label": "Other Household Members",
+    "name": "otherHouseholdMembers",
+    "type": "array",
+    "validations": {
+      "members": {
+        "required": true,
+        "type": "object",
+        "fields": {
+          "lastName": {
+            "required": true,
+            "type": "string"
+          },
+          "firstName": {
+            "required": true,
+            "type": "string"
+          },
+          "middleInitial": {
+            "required": false,
+            "type": "string"
+          },
+          "relationship": {
+            "required": true,
+            "type": "string"
+          },
+          "dateOfBirth": {
+            "required": true,
+            "type": "date"
+          },
+          "socialSecurityNumber": {
+            "required": true,
+            "type": "string",
+            "pattern": "^[0-9]{3}-[0-9]{2}-[0-9]{4}$"
+          }
+        }
+      }
+    }
+  },
+  "HouseholdIncome": {
+    "label": "Household Income",
+    "name": "householdIncome",
+    "type": "object",
+    "validations": {
+      "numberOfPersons": {
+        "required": true,
+        "type": "number",
+        "min": 1
+      },
+      "grossFamilyIncome": {
+        "required": true,
+        "type": "number",
+        "min": 0
+      },
+      "numberOfPersonsEarningIncome": {
+        "required": true,
+        "type": "number",
+        "min": 0
+      }
+    }
+  },
+  "Employment": {
+    "label": "Employment",
+    "name": "employment",
+    "type": "array",
+    "validations": {
+      "members": {
+        "required": true,
+        "type": "object",
+        "fields": {
+          "familyMemberName": {
+            "required": true,
+            "type": "string"
+          },
+          "employerName": {
+            "required": true,
+            "type": "string"
+          },
+          "employerAddress": {
+            "required": true,
+            "type": "string"
+          },
+          "telephoneNumber": {
+            "required": true,
+            "type": "string",
+            "pattern": "^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
+          },
+          "positionHeld": {
+            "required": true,
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

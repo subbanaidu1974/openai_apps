@@ -1,0 +1,29 @@
+
+<div class="race-ethnicity-container">
+  <h2>Select Your Race and Ethnicity</h2>
+  <form [formGroup]="raceEthnicityForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="race">Race</label>
+      <select id="race" formControlName="race" class="form-control">
+        <option value="" disabled>Select your race</option>
+        <option *ngFor="let race of races" [value]="race">{{ race }}</option>
+      </select>
+      <div *ngIf="raceEthnicityForm.get('race').invalid && (raceEthnicityForm.get('race').touched || raceEthnicityForm.get('race').dirty)" class="error">
+        <small>Please select a race.</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="ethnicity">Ethnicity</label>
+      <select id="ethnicity" formControlName="ethnicity" class="form-control">
+        <option value="" disabled>Select your ethnicity</option>
+        <option *ngFor="let ethnicity of ethnicities" [value]="ethnicity">{{ ethnicity }}</option>
+      </select>
+      <div *ngIf="raceEthnicityForm.get('ethnicity').invalid && (raceEthnicityForm.get('ethnicity').touched || raceEthnicityForm.get('ethnicity').dirty)" class="error">
+        <small>Please select an ethnicity.</small>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="raceEthnicityForm.invalid">Submit</button>
+  </form>
+</div>

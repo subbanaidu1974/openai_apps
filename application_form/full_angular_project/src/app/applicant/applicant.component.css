@@ -1,0 +1,65 @@
+
+/* General styles for the applicant form */
+.applicant-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Style for form fields */
+.applicant-form input,
+.applicant-form select,
+.applicant-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style for form labels */
+.applicant-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Button styles */
+.applicant-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.applicant-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .applicant-form {
+        padding: 15px;
+    }
+
+    .applicant-form button {
+        width: 100%;
+    }
+}
