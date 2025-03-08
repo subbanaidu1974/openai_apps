@@ -1,0 +1,217 @@
+{
+    "description": "Assistance is available for homebuyers purchasing throughout the City of Tucson and Pima County, excluding Tribal lands.",
+    "programName": "Down Payment Assistance Program",
+    "firstTimeHomeBuyerRequirement": {
+        "requirement": "No",
+        "description": ""
+    },
+    "dpaDownPaymentBorrowerContribution": {
+        "description": null,
+        "isContributionRequired": false
+    },
+    "firstMortgageProduct": {
+        "firstMortgageProductName": "Down Payment Assistance Program",
+        "customType": [
+            "FreddieMac",
+            "FannieMae",
+            "FHA",
+            "VA",
+            "USDA-RD"
+        ]
+    },
+    "householdOccupantLimits": [
+        {
+            "limitType": "equalto",
+            "limitLowerBound": 1,
+            "limitUpperBound": 1
+        },
+        {
+            "limitType": "equalto",
+            "limitLowerBound": 2,
+            "limitUpperBound": 2
+        },
+        {
+            "limitType": "equalto",
+            "limitLowerBound": 3,
+            "limitUpperBound": 3
+        },
+        {
+            "limitType": "equalto",
+            "limitLowerBound": 4,
+            "limitUpperBound": 4
+        },
+        {
+            "limitType": "equalto",
+            "limitLowerBound": 5,
+            "limitUpperBound": 5
+        },
+        {
+            "limitType": "equalto",
+            "limitLowerBound": 6,
+            "limitUpperBound": 6
+        },
+        {
+            "limitType": "equalto",
+            "limitLowerBound": 7,
+            "limitUpperBound": 7
+        },
+        {
+            "limitType": "equalto",
+            "limitLowerBound": 8,
+            "limitUpperBound": 8
+        }
+    ],
+    "isTargetedIncomeLimit": false,
+    "isTargetedPurchasePriceLimit": false,
+    "location": {
+        "listLocationBy": "counties",
+        "listIndividually": true,
+        "localDetails": []
+    },
+    "isSeperateTable": true,
+    "programType": "loan",
+    "details": {
+        "maximumLienPosition": 2
+    },
+    "programFunds": {
+        "fundingIsUnlimited": true
+    },
+    "loanType": {},
+    "allowedLoanPurposes": [],
+    "programServicingEntities": [],
+    "firstMortgageRequirements": [],
+    "approvedHomeBuyerEducationProvider": [],
+    "hasDeedOrResaleRestriction": false,
+    "ownerOccupancyRequirement": false,
+    "balloonPayment": false,
+    "heloc": false,
+    "negativeAmortization": false,
+    "dpaLoanForgivenessCondition": {
+        "applicable": false,
+        "description": ""
+    },
+    "maximumSalesPrice": [
+        {
+            "cities": [
+                "Tucson"
+            ],
+            "counties": [
+                "Pima County"
+            ],
+            "area": "",
+            "maxPurchasePrice": "$333,925",
+            "products": "Down Payment Assistance Program",
+            "types": "FreddieMac, FannieMae",
+            "propertyType": [
+                "Single-Family",
+                "Townhouse/PUD",
+                "Condominium"
+            ],
+            "targeted": false,
+            "description": "Assistance is available for homebuyers purchasing throughout the City of Tucson and Pima County, excluding Tribal lands."
+        },
+        {
+            "cities": [
+                "Tucson"
+            ],
+            "counties": [
+                "Pima County"
+            ],
+            "area": "",
+            "maxPurchasePrice": "$389,491",
+            "products": "Down Payment Assistance Program",
+            "types": "FreddieMac, FannieMae",
+            "propertyType": [
+                "Single-Family",
+                "Townhouse/PUD",
+                "Condominium"
+            ],
+            "targeted": false,
+            "description": "Assistance is available for homebuyers purchasing throughout the City of Tucson and Pima County, excluding Tribal lands."
+        }
+    ],
+    "householdIncomeLimits": {
+        "cities": [
+            "Tucson"
+        ],
+        "counties": [
+            "Pima County"
+        ],
+        "occupantLimits": [
+            {
+                "occupants": {
+                    "limitType": "equalto",
+                    "limitLowerBound": 1,
+                    "limitUpperBound": 1
+                },
+                "limit": "$50,000"
+            },
+            {
+                "occupants": {
+                    "limitType": "equalto",
+                    "limitLowerBound": 2,
+                    "limitUpperBound": 2
+                },
+                "limit": "$57,150"
+            },
+            {
+                "occupants": {
+                    "limitType": "equalto",
+                    "limitLowerBound": 3,
+                    "limitUpperBound": 3
+                },
+                "limit": "$64,300"
+            },
+            {
+                "occupants": {
+                    "limitType": "equalto",
+                    "limitLowerBound": 4,
+                    "limitUpperBound": 4
+                },
+                "limit": "$71,400"
+            },
+            {
+                "occupants": {
+                    "limitType": "equalto",
+                    "limitLowerBound": 5,
+                    "limitUpperBound": 5
+                },
+                "limit": "$77,150"
+            },
+            {
+                "occupants": {
+                    "limitType": "equalto",
+                    "limitLowerBound": 6,
+                    "limitUpperBound": 6
+                },
+                "limit": "$82,850"
+            },
+            {
+                "occupants": {
+                    "limitType": "equalto",
+                    "limitLowerBound": 7,
+                    "limitUpperBound": 7
+                },
+                "limit": "$88,550"
+            },
+            {
+                "occupants": {
+                    "limitType": "equalto",
+                    "limitLowerBound": 8,
+                    "limitUpperBound": 8
+                },
+                "limit": "$94,250"
+            }
+        ],
+        "products": "Down Payment Assistance Program",
+        "types": "FreddieMac, FannieMae",
+        "targeted": false,
+        "description": "Assistance is available for homebuyers purchasing throughout the City of Tucson and Pima County, excluding Tribal lands.",
+        "area": ""
+    },
+    "creditScoreRestrictions": [],
+    "lenderInfo": {
+        "lenderNames": []
+    },
+    "dpaProgramDocuments": []
+}
